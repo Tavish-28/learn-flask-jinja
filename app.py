@@ -30,7 +30,8 @@ def register():
     #successful registration
     REG1[name] = sport
     return render_template("success.html")
-    @app.route('/reg1')
-    def reg1():
-        # if name is in REG1:
+
+@app.route('/reg1')
+def reg1():
+        # if name is in REG1:  
         return render_template("reg1.html",reg1=REG1)

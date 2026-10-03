@@ -1,0 +1,19 @@
+{%extends "layout.html"%} {%block content%}
+<h1>Registrants</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sport</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%for name in reg1%}
+    <tr>
+      <td>{{name}}</td>
+      <td>{{reg1[name]}}</td>
+    </tr>
+    {%endblock%}
+  </tbody>
+</table>
+{%endblock%}
